@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  /* background-color: aqua; */
+}
+
+.carousel {
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: grid;
+  /* background-color: #e2906f; */
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+.beer-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50px;
+}
+.description {
+  /* flex-shrink: 5; */
+  overflow: auto;
+}
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.about-beer {
+  font-size: 18px;
+  /* margin-left: 5px; */
+  display: inline-block;
+  margin: 10px;
+}
+
+.button-left,
+.button-right {
+  padding: 20px;
+  background-color: #fa9a09;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.button-right {
+  right: 0 !important;
+  left: 100%;
+}
